@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Antic&family=Basic&family=Candal&family=Cinzel:wght@400;600&family=DM+Serif+Display:ital@0;1&family=Jost:wght@300&display=swap");
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/on-sale.css");
+@import url("components/banner.css");
+@import url("components/get-started.css");
+@import url("components/slideshow.css");
+@import url("components/cards.css");
+
+
+body {
+	background-color: #191970;
+	}
+
+h1{
+	font-family: 'Candal', sans-serif;
+	color: #ffd700;
+	font-size: 90px;
+	padding: 0px auto;
+	margin: 0px auto;
+	margin-left: 55px;
+	}
+
+#good-deals{
+	color:#FDDC5C;
+	font-family: 'DM Serif Display', serif;
+	padding: 0px auto;
+}
+
+#intro{
+	color:#FDDC5C;
+	font-family: 'DM Serif Display', serif;
+	padding: 0px auto;
+		margin-left: 75px;
+	}
+
+#meet-me{
+	color:#FDDC5C;
+	font-family: 'DM Serif Display', serif;
+	padding: 0px auto;
+		margin-left: 75px;
+}
+
+p{
+	font-family: 'Jost', sans-serif;
+		color:#FDDC5C;
+}
+
+@media (max-width: 960px) {
+  #container {
+    width: 700px;
+  }
+}
+@media (max-width: 800px) {
+	#container{
+		width: 610px;
+	}
+}
+
+@media (max-width: 760px) {
+	#container{
+		width: 600px;
+	}
+}
+
+@media (max-width: 700px) {
+	#container{
+		width: 520px;
+	}
+}
+
+@media (max-width: 620px) {
+	#container{
+		width: 500px;
+	}
+}
+
+@media (max-width: 500px) {
+	#container{
+		width: 370px;
+	}
+}
+
+@media (max-width: 420px) {
+	#container{
+		width: 300px;
+	}
+}
+
+@media (max-width: 375px) {
+	#container{
+		width: 260px;
+	}
+}

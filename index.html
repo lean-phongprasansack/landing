@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="css/style.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<style>
+				* {box-sizing: border-box}
+				body {font-family: 'Candal', sans-serif;}
+				.mySlides {display: none}
+				img {vertical-align: middle;}
+
+				/* Slideshow container */
+				.slideshow-container {
+				  max-width: 550px;
+				  position: relative;
+				  margin: auto;
+				}
+
+				.prev, .next {
+				  cursor: pointer;
+				  position: absolute;
+				  top: 50%;
+				  width: auto;
+				  padding: 16px;
+				  margin-top: -22px;
+				  color: white;
+				  font-weight: bold;
+				  font-size: 18px;
+				  transition: 0.6s ease;
+				  border-radius: 0 3px 3px 0;
+				  user-select: none;
+				}
+
+				.next {
+				  right: 0;
+				  border-radius: 3px 0 0 3px;
+				}
+
+				.prev:hover, .next:hover {
+				  background-color: #191970;
+				}
+
+
+				.text {
+				  color: #ffd700;
+				  font-size: 30px;
+				  padding: 8px 12px;
+				  position: absolute;
+				  bottom: 8px;
+				  width: 100%;
+				  text-align: center;
+				}
+
+				.dot {
+				  cursor: pointer;
+				  height: 15px;
+				  width: 15px;
+				  margin: 0 2px;
+				  background-color: #bbb;
+				  border-radius: 50%;
+				  display: inline-block;
+				  transition: background-color 0.7s ease;
+				}
+
+				.active, .dot:hover {
+				  background-color: #717171;
+				}
+
+				.fade {
+				  animation-name: fade;
+				  animation-duration: 2s;
+				}
+
+				@keyframes fade {
+				  from {opacity: .4} 
+				  to {opacity: 1}
+				}
+
+				@media only screen and (max-width: 300px) {
+				  .prev, .next,.text {font-size: 18px}
+				}
+				</style>
+
+</head>		
+
+
+
+<body>
+		<div class="banner">
+			<h1>UMAI !</h1>
+				<h2 id="intro">Anime-inspired Snacks</h2>
+				<br><br><br>
+						<a href="#" class="btn-start" target="_blank">Get Started</a>
+
+			<div class="container">
+				
+			</div>
+		</div>
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <img src="images/slideshow-snacks.png" style="width:100%">
+		  <div class="text">Order April's Box !</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="images/inazuma.jpg" style="width:100%">
+		  <div class="text">Our team's picks !</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="images/your-name.png" style="width:100%">
+		  <div class="text">Newest Merch and Stationary</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+
+		<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+
+	<div class="cards">
+		<img src="images/pokemon.jpg" width="190px">
+		<h3>Merch  ૮ ˶ᵔ ᵕ ᵔ˶ ა</h3>
+		<a href="#" class="btn-card">See our newest merch !</a>
+	</div>
+
+<div class="allcards">
+	<div class="cards">
+		<img src="images/onepiece.jpg" width="190px">
+		<h3>"A la carte" items</h3>
+		<a href="#" class="btn-card">Purchase here</a>
+	</div>
+
+	<div class="cards">
+		<img src="images/jjk.jpg" width="190px">
+		<h3>Custom-made items</h3>
+		<a href="#" class="btn-card">Don't miss out on them !</a>
+	</div>
+</div>
+
+	<div class="container">
+		<h2	id="meet-me" >Meet the Owner !</h2>
+			<img class="avatar" src="images/nikolai.jpeg" alt="My Avatar">
+			<p id="perso-desc">
+				Hi, I'm Léan ! I launched UMAI! two months ago. Check out our sales and promotions !
+			</p>
+		<h2 id="good-deals">Good deals</h2>
+			<a href="#" class="btn-sale" target="_blank">On Sale</a>
+	</div>
+
+<button data-tf-slider="tLpRi84Z" data-tf-position="right" data-tf-opacity="100" data-tf-iframe-props="title=My typeform UMAI" data-tf-transitive-search-params data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#9AB0D0;color:#000;font-size:18px;border-radius:22px;padding:0 30px;font-weight:bold;height:45px;cursor:pointer;line-height:45px;text-align:center;margin:0;text-decoration:none;">stay in touch !</button><script src="//embed.typeform.com/next/embed.js"></script>
+
+</body>
+
+
+</html>

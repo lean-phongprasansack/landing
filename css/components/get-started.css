@@ -1,0 +1,33 @@
+.btn-start{
+	background-color: #FDDC5C;
+	padding: 15px 15px;
+	color: white;
+	border-radius: 15px;
+	font-family: 'Candal', sans-serif;
+	text-decoration: none;
+	margin: 0px 100px;
+
+}
+
+.btn-start:hover{
+	text-decoration: underline;
+	color:#FDDC5C	;
+	background-color: white;
+}
+
+.btn-card{
+	background-color: #add8e6;
+	padding: 15px 15px;
+	color: white;
+	border-radius: 15px;
+	font-family: 'Candal', sans-serif;
+	color: white;
+	text-decoration: none;
+	margin: 0px 100px;
+}
+
+.btn-card:hover{
+	text-decoration: underline;
+	color:white	;
+	background-color: #add8e6;
+}

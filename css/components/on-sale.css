@@ -1,0 +1,15 @@
+.btn-sale{
+	background-color: #8b0000;
+	padding: 15px 15px;
+	color: white;
+	border-radius: 15px;
+	font-family: 'Candal', sans-serif;
+	text-decoration: none;
+
+}
+
+.btn-sale:hover{
+	text-decoration: underline;
+	color:#8B0000;
+	background-color: white;
+}
